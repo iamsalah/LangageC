@@ -1,38 +1,46 @@
-// ConsoleApplication1.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
+// ConsoleApplication1.cpp : This file contains the 'main' function. The execution of the program starts and ends here.
 //
 
 #include <stdio.h>
 
-void Voiture(char Marque,char Modele);
+void Voiture(const char* Marque, const char* Modele);
 
 int main()
 {
-    int var1,var2,var3;
-    printf("Rentrer une valeur \n");
-    scanf_s("%d",&var1);
-    printf("Rentrer une 2e valeur \n");
-    scanf_s("%d",&var2);
-    printf("Rentrer une 3e valeur \n");
-    scanf_s("%d", &var3);
-    char mot1 = 'Bjr';
-    char mot2 = 'Audi';
-    char mot3 = 'A2';
+    int var1, var2, var3;
+    printf("Input first value: \n");
+    
+    scanf("%d", &var1); // input value
+    
+    printf("Input second value: \n");
+    scanf("%d", &var2);
+    
+    printf("Input third value: \n");
+    scanf("%d", &var3);
+    
+    const char* mot1 = "Hello";
+    
+    const char* mot2 = "Volkswagen";
+    
+    const char* mot3 = "Golf7";
+    
     printf("%s", mot2);
     Voiture(mot2, mot3);
+    return 0;
 }
 
-void Voiture(char Marque, char Modele) {
-    printf("%s %s est en train de rouler", Marque, Modele);
+void Voiture(const char* Marque, const char* Modele)
+{
+    printf("%s %s is now running", Marque, Modele);
 }
 
+// Run the program: Ctrl+F5 or Debug menu > Run without debugging
+// Debug the program: F5 or Debug menu > Start debugging
 
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
+// Tips for a good start :
+// 1- Use the Solution Explorer window to add files and manage them.
+// 2- Use the Team Explorer window to connect to source code control.
+// 3- Use the Output window to see the generation output and other messages.
+// 4- Use the Error List window to see the errors.
+// 5- Go to Project > Add New Item to create code files, or Project > Add Existing Item to add existing code files to the project.
+// 6- To reopen this project later, go to File > Open > Project and select the .sln file.

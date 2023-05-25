@@ -3,7 +3,9 @@
 
 // Définition de la fonction pour ajouter un nouvel ordinateur
 void ajouterOrdinateur(struct Ordinateur* boutique, int* nbOrdinateurs) {
+
     if (*nbOrdinateurs < 100) {
+    
         struct Ordinateur nouvelOrdinateur;
 
         printf("Marque : ");

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Salah-Eddine/OneDrive - AFORP exploitation/Master 1 IRS/LangageC/Github/LangageC",
-      "program": "c:/Users/Salah-Eddine/OneDrive - AFORP exploitation/Master 1 IRS/LangageC/Github/LangageC/build/Debug/outDebug",
+      "cwd": "c:/Users/Salah-Eddine/OneDrive - AFORP exploitation/Master 1 IRS/LangageC/Github/LangageC-1",
+      "program": "c:/Users/Salah-Eddine/OneDrive - AFORP exploitation/Master 1 IRS/LangageC/Github/LangageC-1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
